@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define LENGTH_OF_NAME 20
+
+typedef struct Hokejista {
+    char jmeno[LENGTH_OF_NAME];
+    int pocetGolu;
+    int pocetAsistenci;
+} Hokejista;
+
+int spocitejKanadskeBody(Hokejista hokejista) {
+    return hokejista.pocetAsistenci + hokejista.pocetGolu;
+}
+
+int main() {
+    int pocetHokejistu = 0;
+    char pocetHokejistuString[5];
+    FILE* input = fopen("hokejisti.txt", "r");
+    fgets(pocetHokejistuString, 1024, input);
+    pocetHokejistu = atoi(pocetHokejistuString);
+    Hokejista* poleHokejistu = (int*)malloc(sizeof(Hokejista*) * pocetHokejistu);
+
+    char line[20];
+    while (fgets(line, 20, input) != NULL) {
+        Hokejista temp;
+        strcpy(temp.jmeno, line);
+        fgets(line, 20, input);
+        temp.pocetGolu = atoi(line);
+        fgets(line, 20, input);
+        temp.pocetAsistenci = atoi(line);
+        printf("Jmeno:%s, Goly:%d, Asistence:%d", temp.jmeno, temp.pocetGolu, temp.pocetAsistenci);
+    }
+
+    free(poleHokejistu);
+    return 0;
+}

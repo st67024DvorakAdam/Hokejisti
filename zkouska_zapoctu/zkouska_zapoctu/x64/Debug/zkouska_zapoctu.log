@@ -1,0 +1,6 @@
+﻿  main.c
+G:\Můj disk\upce\2. ročník\LS\céčko\zkouska_zapoctu\zkouska_zapoctu\main.c(28,14): warning C4013: strcspn nedefinované; předpokládá se extern vracející int.
+G:\Můj disk\upce\2. ročník\LS\céčko\zkouska_zapoctu\zkouska_zapoctu\main.c(29,9): warning C4013: strcpy nedefinované; předpokládá se extern vracející int.
+G:\Můj disk\upce\2. ročník\LS\céčko\zkouska_zapoctu\zkouska_zapoctu\main.c(20,19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+G:\Můj disk\upce\2. ročník\LS\céčko\zkouska_zapoctu\zkouska_zapoctu\main.c(23,16): warning C4133: inicializování: nekompatibilní typy – z: int * na: Hokejista *
+  zkouska_zapoctu.vcxproj -> G:\Můj disk\upce\2. ročník\LS\céčko\zkouska_zapoctu\x64\Debug\zkouska_zapoctu.exe
